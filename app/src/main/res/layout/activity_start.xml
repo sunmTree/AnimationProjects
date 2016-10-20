@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmg.animationproject.StartActivity">
+
+    <TextView
+        android:id="@+id/Sign_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signTitle"
+        android:layout_marginTop="@dimen/dp_50"
+        android:visibility="invisible"
+        style="@style/app_text_title"/>
+
+    <LinearLayout
+        android:id="@+id/input_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/dp_100">
+        <EditText
+            android:id="@+id/sign_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_name"/>
+        <EditText
+            android:id="@+id/sign_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:hint="@string/password"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_btn_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:visibility="invisible"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/sign_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"/>
+        <Button
+            android:id="@+id/sign_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sign_img"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:src="@mipmap/logopic"
+        android:visibility="invisible"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_100"/>
+
+    <View
+        android:id="@+id/first_page"
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_6"
+        android:background="@drawable/circle_bg"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/flay"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@mipmap/flay"
+        android:layout_centerVertical="true"
+        android:translationX="-30dp"/>
+
+</RelativeLayout>

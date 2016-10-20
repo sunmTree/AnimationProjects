@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_anim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunmg.animationproject.animui.LoginAnimActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_sign_up"
+        android:scaleType="fitXY"
+        android:src="@mipmap/signup"/>
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/circle_bg"
+        android:gravity="center"
+        android:onClick="singUp"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"/>
+
+    <com.sunmg.view.TransitionView
+        android:id="@+id/ani_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

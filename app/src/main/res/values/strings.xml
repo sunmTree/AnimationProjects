@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AnimationProjects</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="signTitle">NEED_SIGN_IN</string>
+    <string name="input_name">please input your name</string>
+    <string name="password">enter the password</string>
+    <string name="ok">Login</string>
+    <string name="register">register</string>
+</resources>
